@@ -1,0 +1,9 @@
+<h1>Update an existing article</h1>
+<form action="/articles/<%= @article.id %>" method="post">
+<input id="hidden" type="hidden" name="_method" value="PATCH">
+  <label>Article title:</label> 
+  <input type="textarea" name="title" id="title" value="<%=@article.title%>"">
+  <label>Article content: </label>  
+  <input type="text" name="content" id="content" value="<%=@article.content%>"">
+  <input type="submit" value="Submit">
+</form>
