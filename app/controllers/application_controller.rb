@@ -1,4 +1,3 @@
-
 require_relative '../../config/environment'
 
 class ApplicationController < Sinatra::Base
@@ -44,5 +43,4 @@ class ApplicationController < Sinatra::Base
     article = Article.find_by id: params[:id]
     article.delete
   end
-
 end
