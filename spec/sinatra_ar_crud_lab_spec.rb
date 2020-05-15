@@ -67,8 +67,6 @@ describe "Magazine App" do
         expect(last_response.body).to include(article_content)
       end
     end
-
-
   end
 
 
